@@ -4,6 +4,9 @@ ScriptsOnlyBuild:
     - FollowPlayer
     - NPCVehicle
     - PlayerController
+    Unity.Play.Publisher.Editor.dll:
+    - Unity.Play.Publisher.Editor.AnalyticsHelper
+    - Unity.Play.Publisher.Editor.PublisherWindow
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.TestRunner.dll:
@@ -627,6 +630,12 @@ ScriptsOnlyBuild:
     className: StateGraphAsset
   - hash:
       serializedVersion: 2
+      Hash: a667f5a78650d1173e33143f53130d40
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PlayerControllerX
+  - hash:
+      serializedVersion: 2
       Hash: 6a356b04c25c0bb008c1b24bf8b0f996
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
@@ -655,6 +664,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnMouseUpAsButtonMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: c544d86c7c03381fb728cb052350ba7f
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: FollowPlayerX
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -829,6 +844,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: ScrollRect
+  - hash:
+      serializedVersion: 2
+      Hash: df383c01bb009fd4fffdd8a861bb9a61
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: SpinPropellerX
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b

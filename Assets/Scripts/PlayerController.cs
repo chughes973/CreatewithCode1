@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     private float turnSpeed = 25.0f;
     private float horizontalInput;
     private float forwardInput;
+    //Public Variables
     public Camera mainCamera;
     public Camera hoodCamera;
     public KeyCode switchKey;

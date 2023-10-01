@@ -640,6 +640,18 @@ void RegisterAllStrippedInternalCalls()
 
 	//End Registrations for type : UnityEngine.QualitySettings
 
+	//Start Registrations for type : UnityEngine.Quaternion
+
+		//System.Void UnityEngine.Quaternion::Internal_FromEulerRad_Injected(UnityEngine.Vector3&,UnityEngine.Quaternion&)
+		void Register_UnityEngine_Quaternion_Internal_FromEulerRad_Injected();
+		Register_UnityEngine_Quaternion_Internal_FromEulerRad_Injected();
+
+		//System.Void UnityEngine.Quaternion::Inverse_Injected(UnityEngine.Quaternion&,UnityEngine.Quaternion&)
+		void Register_UnityEngine_Quaternion_Inverse_Injected();
+		Register_UnityEngine_Quaternion_Inverse_Injected();
+
+	//End Registrations for type : UnityEngine.Quaternion
+
 	//Start Registrations for type : UnityEngine.Rendering.GraphicsSettings
 
 		//System.Boolean UnityEngine.Rendering.GraphicsSettings::get_lightsUseLinearIntensity()
@@ -794,6 +806,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Transform_TransformDirection_Injected();
 		Register_UnityEngine_Transform_TransformDirection_Injected();
 
+		//System.Void UnityEngine.Transform::get_localRotation_Injected(UnityEngine.Quaternion&)
+		void Register_UnityEngine_Transform_get_localRotation_Injected();
+		Register_UnityEngine_Transform_get_localRotation_Injected();
+
 		//System.Void UnityEngine.Transform::get_position_Injected(UnityEngine.Vector3&)
 		void Register_UnityEngine_Transform_get_position_Injected();
 		Register_UnityEngine_Transform_get_position_Injected();
@@ -802,9 +818,17 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Transform_get_rotation_Injected();
 		Register_UnityEngine_Transform_get_rotation_Injected();
 
+		//System.Void UnityEngine.Transform::set_localRotation_Injected(UnityEngine.Quaternion&)
+		void Register_UnityEngine_Transform_set_localRotation_Injected();
+		Register_UnityEngine_Transform_set_localRotation_Injected();
+
 		//System.Void UnityEngine.Transform::set_position_Injected(UnityEngine.Vector3&)
 		void Register_UnityEngine_Transform_set_position_Injected();
 		Register_UnityEngine_Transform_set_position_Injected();
+
+		//System.Void UnityEngine.Transform::set_rotation_Injected(UnityEngine.Quaternion&)
+		void Register_UnityEngine_Transform_set_rotation_Injected();
+		Register_UnityEngine_Transform_set_rotation_Injected();
 
 		//UnityEngine.Transform UnityEngine.Transform::GetChild(System.Int32)
 		void Register_UnityEngine_Transform_GetChild();
