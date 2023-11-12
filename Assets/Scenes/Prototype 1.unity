@@ -1073,6 +1073,12 @@ MonoBehaviour:
   speedometerText: {fileID: 251865590}
   rpmText: {fileID: 2036010539}
   rpm: 0
+  allWheels:
+  - {fileID: 909178350}
+  - {fileID: 909178349}
+  - {fileID: 909178348}
+  - {fileID: 909178347}
+  wheelsOnGround: 0
 --- !u!54 &443552497
 Rigidbody:
   m_ObjectHideFlags: 0

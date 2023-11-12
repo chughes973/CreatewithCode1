@@ -4,6 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using TMPro;
 
+
 public class PlayerController : MonoBehaviour
 {
     //Serialize Variables
@@ -21,6 +22,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] TextMeshProUGUI speedometerText;
     [SerializeField] TextMeshProUGUI rpmText;
     [SerializeField] float rpm;
+    [SerializeField] List<WheelCollider> allWheels;
+    [SerializeField] int wheelsOnGround;
 
     // Start is called before the first frame update
     private void Start()
@@ -34,20 +37,44 @@ public class PlayerController : MonoBehaviour
         //This is where we get player input 
         horizontalInput = Input.GetAxis("Horizontal");
         forwardInput = Input.GetAxis("Vertical");
-        //Move the vehicle forward
-        playerRb.AddRelativeForce(Vector3.forward * horsePower * forwardInput);
-        // Rotate the vehicle instead of sliding
-        transform.Rotate(Vector3.up, Time.deltaTime * turnSpeed * horizontalInput);
-        speed = Mathf.RoundToInt(playerRb.velocity.magnitude * 2.237f); //for kmph change 2.237 to 3.6
-        speedometerText.SetText("Speed: " + speed + "mph");
-        rpm = (speed % 30) * 40;
-        rpmText.SetText("RPM: " + rpm);
+
+        if (IsOnGround())
+        {
+            //Move the vehicle forward
+            playerRb.AddRelativeForce(Vector3.forward * horsePower * forwardInput);
+            // Rotate the vehicle instead of sliding
+            transform.Rotate(Vector3.up, Time.deltaTime * turnSpeed * horizontalInput);
+            speed = Mathf.RoundToInt(playerRb.velocity.magnitude * 2.237f); //for kmph change 2.237 to 3.6
+            speedometerText.SetText("Speed: " + speed + "mph");
+            rpm = (speed % 30) * 40;
+            rpmText.SetText("RPM: " + rpm);
+        }
         //Change Camera view by pressing F button
         if(Input.GetKeyDown(switchKey))
         {
             mainCamera.enabled = !mainCamera.enabled;
             hoodCamera.enabled = !hoodCamera.enabled;
 
+        }
+    }
+
+    bool IsOnGround()
+    {
+        wheelsOnGround = 0;
+        foreach (WheelCollider wheel in allWheels)
+        {
+            if (wheel.isGrounded)
+            {
+                wheelsOnGround++;
+            }
+        }
+        if (wheelsOnGround == 4)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
         }
     }
 }
