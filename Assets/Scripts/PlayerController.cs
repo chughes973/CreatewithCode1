@@ -16,11 +16,13 @@ public class PlayerController : MonoBehaviour
     public Camera hoodCamera;
     public KeyCode switchKey;
     private Rigidbody playerRb;
+    [SerializeField] GameObject centerOfMass;
 
     // Start is called before the first frame update
     private void Start()
     {
         playerRb = GetComponent<Rigidbody>();
+        playerRb.centerOfMass = centerOfMass.transform.position;
     }
     // Update is called once per frame
     void FixedUpdate()
