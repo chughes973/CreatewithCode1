@@ -472,12 +472,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpinPropellerX__ctor_m8A61D6904DCB463DBF
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FollowPlayer_Start_m138697E0740DB2570074B2DB69AE32AF46A994F9 (FollowPlayer_tC92033F1F4FD4547E9C5E32B878BB3DB993E2327* __this, const RuntimeMethod* method) 
-{
-	{
-		return;
-	}
-}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FollowPlayer_LateUpdate_m69B79F77CFC8072526CE0BA2D71179F66AE15B70 (FollowPlayer_tC92033F1F4FD4547E9C5E32B878BB3DB993E2327* __this, const RuntimeMethod* method) 
 {
 	{
@@ -556,13 +550,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NPCVehicle__ctor_mFD87C1D505C7E552D74205
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerController_Start_m1D83076E8B136A71051F2F02545EE04947D3A8CF (PlayerController_t7E8D7042FA2D0DFEC54A1FCDF395161D88DAAE95* __this, const RuntimeMethod* method) 
-{
-	{
-		return;
-	}
-}
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerController_Update_m1F4051EB5BCBCCE5EEE2E3E49B7E278C3B14EC33 (PlayerController_t7E8D7042FA2D0DFEC54A1FCDF395161D88DAAE95* __this, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerController_FixedUpdate_m6D906D8B13844542B81CC49BA19760F747CEC8C0 (PlayerController_t7E8D7042FA2D0DFEC54A1FCDF395161D88DAAE95* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)

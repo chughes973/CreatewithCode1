@@ -50,11 +50,11 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 3572}
+      Script: {instanceID: 3574}
     - Class: 114
-      Script: {instanceID: 4664}
+      Script: {instanceID: 4674}
     - Class: 114
-      Script: {instanceID: 5128}
+      Script: {instanceID: 5140}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -504,7 +504,7 @@ ScriptsOnlyBuild:
     className: GridLayoutGroup
   - hash:
       serializedVersion: 2
-      Hash: 44d485c9ab74da290d7635d8c764176b
+      Hash: 7d184a2e8b1a04abeac74f667e68043f
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: PlayerController
@@ -600,7 +600,7 @@ ScriptsOnlyBuild:
     className: PanelEventHandler
   - hash:
       serializedVersion: 2
-      Hash: 71668efd4d92a44ca6246fb490c3a8b4
+      Hash: 0a5ddb5d6ad75a6d15e8ff2107a3783d
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: FollowPlayer
@@ -925,4 +925,4 @@ ScriptsOnlyBuild:
   platform: 20
   scenePathNames:
   - Assets/Scenes/Prototype 1.unity
-  playerPath: C:/Users/hughe/Desktop/Create with Code - Colleen
+  playerPath: C:/Users/hughe/Desktop/Create with Code 1

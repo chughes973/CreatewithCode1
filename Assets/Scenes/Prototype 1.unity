@@ -929,7 +929,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e0ff19092f832143a912ff83c95e07d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 25
+  horsePower: 20000
   turnSpeed: 25
   mainCamera: {fileID: 534669904}
   hoodCamera: {fileID: 246253280}
